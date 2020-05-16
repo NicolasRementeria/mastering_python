@@ -27,9 +27,27 @@ ___
 - > pipenv install pylint
 - > pipenv install autopep8
 
-
+**VSCode Helpful Extension**
+- "Better TOML": To highlight Pipfile
 ___
 
+***To test the App:***
+
+- > flask run
+
+Output Example:
+
+```
+$  flask run
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2020-05-16 18:51:26,382] ERROR in app: Exception on / [GET]
+```
+
+___
 
 Tutorial followed: 
 
