@@ -40,7 +40,13 @@ ___
 5. run "flask run"
 6. go to http://127.0.0.1:5000/
 
+___
+
+Preview: 
+
 ![Image description](https://github.com/NicolasRementeria/mastering_python/blob/master/first%20week/Python_Flash_Calculator/2020-05-16%2020_09_36-My%20Calculator.png)
+
+___
 
 Output Example:
 
