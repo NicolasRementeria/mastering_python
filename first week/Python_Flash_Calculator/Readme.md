@@ -33,7 +33,14 @@ ___
 
 ***To test the App:***
 
-- > flask run
+1. step into a local folder
+2. git clone https://github.com/NicolasRementeria/mastering_python.git
+3. cd to "\mastering_python\first week\Python_Flash_Calculator"
+4. run "pipenv shell"
+5. run "flask run"
+6. go to http://127.0.0.1:5000/
+
+![Image description]https://github.com/NicolasRementeria/mastering_python/blob/master/first%20week/Python_Flash_Calculator/2020-05-16%2020_09_36-My%20Calculator.png
 
 Output Example:
 
