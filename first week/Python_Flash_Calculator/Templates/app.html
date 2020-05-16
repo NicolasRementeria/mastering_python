@@ -9,6 +9,17 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
         />
+
+        <style>
+            .alert{
+                background: green;
+                padding: 1rem;
+                border-radius: 5px;
+                color: white;
+                margin: 1rem;
+            }
+        </style>
+
     </head>
     <body>
         <div class="container">
@@ -20,7 +31,7 @@
         <!-- Form -->
 
         <div class="container">
-            <form action="/send method POST">
+            <form action="/send" method="POST">
                 <label for="Number One">First Number</label>
                 <input
                     type="text"
@@ -44,7 +55,9 @@
                 </select>
 
                 <input type="submit" value="Calculate" id="calc_btn"/>
-
+                <div class="alert">
+                    {{ sum }}
+                </div>
             </form>
         </div>
 
