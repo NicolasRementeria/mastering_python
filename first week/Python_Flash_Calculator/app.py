@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import math
 
 app = Flask(__name__)
 
@@ -27,6 +28,12 @@ def send(sum=sum):
             return render_template('app.html', sum=sum)
         elif operation == 'divide':
             sum = float(num1) / float(num2)
+            return render_template('app.html', sum=sum)
+        elif operation == 'exponential':
+            sum = float(num1) ** float(num2)
+            return render_template('app.html', sum=sum)
+        elif operation == 'logarithm':
+            sum = math.log(float(num1), float(num2))
             return render_template('app.html', sum=sum)
         else:
             return render_template('app.html')
