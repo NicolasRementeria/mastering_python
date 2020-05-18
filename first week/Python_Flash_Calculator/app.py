@@ -10,6 +10,8 @@ def main():
 
 @app.route('/send', methods=['POST'])
 
+@app.route('/sendEquation', methods=['POST'])
+
 def send(sum=sum):
     if request.method == 'POST':
         
@@ -37,3 +39,14 @@ def send(sum=sum):
             return render_template('app.html', sum=sum)
         else:
             return render_template('app.html')
+
+def sendEquation(sumEquation=sum):
+    if request.method == 'POST':
+        equation = request.form['equation']
+        if equation:
+            sumEquation = float(equation)
+            return render_template('app.html', sum=sumEquation)
+
+if __name__ == ' __main__':
+    app.debug = True
+    app.run()
